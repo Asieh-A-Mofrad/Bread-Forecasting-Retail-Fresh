@@ -1,0 +1,5 @@
+# Meta file for convenience.
+# Prefer using one of the split environment files directly:
+#   - requirements-core.txt
+#   - requirements-autogluon.txt
+-r requirements-core.txt

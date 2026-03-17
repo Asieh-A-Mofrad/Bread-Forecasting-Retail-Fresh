@@ -1,0 +1,66 @@
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Python cache/build ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.dylib
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# --- Virtual envs ---
+.venv/
+.venv*/
+venv/
+env/
+ENV/
+
+# --- Jupyter ---
+*.nbconvert.ipynb
+
+# --- Local env/config ---
+.env
+.env.*
+
+# --- Logs/temp ---
+*.log
+*.tmp
+*.swp
+
+# --- Project artifacts (generated) ---
+models/
+results/
+artifacts/
+
+# Local/private data (do not push to GitHub)
+data/
+
+# Internal summary (not for GitHub)
+REPOSITORY_SUMMARY.md
+
+# Allow package markers under src even if a global ignore rule exists
+!src/data/__init__.py
+!src/models/__init__.py
+
+# AutoGluon output folders if created elsewhere
+AutogluonModels/
+**/AutogluonModels/
+
+# Optional: macOS metadata in nested folders
+**/.DS_Store
+
+# Force-include source code (override overly aggressive global ignores)
+!src/
+!src/**/*.py
+!src/**/*.sh
+!src/**/*.ipynb
